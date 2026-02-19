@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Jahoush - Professional CV</title>
+    <style>
+        :root {
+            --primary-color: #34495e;
+            --accent-color: #34495e;
+            --text-color: #333;
+            --light-grey: #f4f4f4;
+            --link-color: #1a73e8;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #525659;
+        }
+
+        .paper {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 8mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            padding-top: 4px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 26pt;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+
+        .links {
+            font-size: 10pt;
+            margin-top: 6px;
+        }
+
+        .links a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .links .sep {
+            color: #777;
+            margin: 0 8px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            color: var(--primary-color);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+
+        .summary {
+            font-style: normal;
+        }
+
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #47a0c2;;
+
+        }
+
+        .job-title {
+            font-style: italic;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            /* text-align: justify; */
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill {
+            background: var(--accent-color);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-right: 5px;
+            margin-bottom: 2px;
+            display: inline-block;
+            font-size: 9pt;
+        }
+
+        .soft-skill-block {
+            margin-top: 8px;
+            /* text-align: justify; */
+        }
+
+        .soft-skill-title {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 4px;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+
+            .paper {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            button {
+                display: none;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+        .header-left {
+            flex-shrink: 0;
+        }
+
+        .header-center {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-info {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="download-btn" onclick="window.print()">Print to PDF</button>
+
+    <div class="paper">
+        <header>
+            <div class="header-content">
+                <img src="profile1.png" alt="Hasan Jahoush" class="profile-pic">
+
+                <h1>Hasan Jahoush</h1>
+
+                <div class="contact-info">
+                    Nicosia, Cyprus | +357 99260049 | hasan.cy99@gmail.com
+                </div>
+
+                <div class="links">
+                    <a href="https://hasan-jahouse.dev/" target="_blank">Portfolio</a>
+                    <span class="sep">|</span>
+                    <a href="https://www.linkedin.com/in/hasan-jahouse-bb457419a/" target="_blank">LinkedIn</a>
+                    <span class="sep">|</span>
+                    <a href="https://github.com/hasan-99" target="_blank">GitHub</a>
+                </div>
+
+                <strong>Software Engineer | AI & Systems Developer</strong>
+            </div>
+        </header>
+
+
+        <section>
+            <p class="summary">
+                Motivated and detail-oriented Software Engineer with strong experience in backend systems, modern
+                frontend frameworks, and AI-supportive pipelines. Skilled in building scalable, secure, and maintainable
+                applications across enterprise and cybersecurity-focused environments. Known for clean architecture
+                thinking and effective collaboration within security-critical teams.
+            </p>
+        </section>
+
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Odyssey Cybersecurity</span>
+                <span>Aug 2024 – Present</span>
+            </div>
+            <span class="job-title">Software Engineer</span>
+            <ul>
+                <li>Architect secure internal platforms supporting cybersecurity operations and threat analysis
+                    workflows.</li>
+                <li>Support AI pipelines through data preparation, backend services, and system integration for LLM
+                    systems.</li>
+                <li>Design software with a focus on system hardening, vulnerability mitigation, and secure coding
+                    practices.</li>
+                <li>Collaborate with security analysts to convert threat intelligence into functional software
+                    components.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>TechLink</span>
+                <span>Oct 2022 – Aug 2024</span>
+            </div>
+            <span class="job-title">Software Engineer</span>
+            <ul>
+                <li>Implemented enterprise software using <b>C#, .NET, and Microservices</b> architecture.</li>
+                <li>Developed modern frontend applications using <b>Angular and React.js</b>.</li>
+                <li>Engineered event-driven architectures using <b>RabbitMQ</b> for scalable background processing.</li>
+                <li>Optimized SQL queries and relational databases to improve system reliability and performance.</li>
+            </ul>
+        </div>
+
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-cat">
+                <strong>Backend:</strong><br>
+                <span class="skill">C#</span>
+                <span class="skill">.NET</span>
+                <span class="skill">RESTful APIs</span>
+                <span class="skill">Microservices</span>
+                <span class="skill">RabbitMQ</span>
+            </div>
+            <div class="skill-cat">
+                <strong>Frontend:</strong><br>
+                <span class="skill">Angular</span>
+                <span class="skill">React.js</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">Bootstrap</span>
+            </div>
+            <div class="skill-cat">
+                <strong>Data & AI:</strong><br>
+                <span class="skill">LLM Data Prep</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Impala</span>
+            </div>
+            <div class="skill-cat">
+                <strong>Tools:</strong><br>
+                <span class="skill">Docker</span>
+                <span class="skill">Git</span>
+                <span class="skill">CI/CD</span>
+                <span class="skill">JIRA</span>
+            </div>
+        </div>
+
+        <h2>Communication & Interpersonal Skills</h2>
+        <div class="soft-skill-block">
+            Strong communicator with the ability to collaborate effectively in cross-functional and multicultural teams.
+            Capable of translating complex technical concepts into clear and actionable information. Demonstrates
+            professionalism,
+            adaptability, and a proactive approach to problem-solving.
+        </div>
+
+        <h2>Organisational & Managerial Skills</h2>
+        <div class="soft-skill-block">
+            Well-organized and methodical professional with strong time-management and prioritization skills. Able to
+            work independently
+            or as part of a team while maintaining high quality standards. Experienced in handling multiple tasks
+            simultaneously in fast-paced
+            environments and contributing to structured, results-driven workflows.
+        </div>
+
+        <h2>Education</h2>
+        <div class="job">
+            <div class="job-header">
+                <span>University of the People</span>
+                <span>2018 – 2023</span>
+            </div>
+            <span class="job-title">Bachelor of Computer Science</span>
+        </div>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>AI Engineering & Data Preparation for LLMs</li>
+            <li>Google IT Support Professional Certificate</li>
+            <li>Cybersecurity Fundamentals & Ethical Computing</li>
+        </ul>
+
+        <h2>Languages</h2>
+        <p><b>Arabic:</b> Native </p>
+        <p><b>English:</b> Proficient </p>
+        <p><b>Greek:</b> Conversational</p>
+
+    </div>
+</body>
+
+</html>
